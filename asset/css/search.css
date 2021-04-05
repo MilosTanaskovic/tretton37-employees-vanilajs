@@ -12,6 +12,6 @@ form input {
  width: 100%;
 }
 
-input:focus {
+input:focus, .scrollToTopBtn:focus {
  outline: none;
 }
