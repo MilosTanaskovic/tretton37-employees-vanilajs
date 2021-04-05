@@ -3,6 +3,23 @@
  max-width: 100%;
 }
 
+/* List-Grid View Toggle Buttons */
+.view-toggle {
+ display: flex;
+ justify-content: center;
+ padding: 20px;
+}
+
+.view-toggle div {
+ margin: 0px 10px;
+ color: #fffffa;
+ cursor: pointer;
+}
+
+.view-toggle div > * {
+ pointer-events: none;
+}
+
 /* List of employees grid view*/
 ul.wrapper {
  display: grid;
@@ -10,6 +27,12 @@ ul.wrapper {
  grid-gap: 2rem;
  list-style-type: none;
  padding: 30px;
+}
+
+/* List of employees list view */
+ul.wrapper.list {
+ grid-template-columns: max-content;
+ justify-content: center;
 }
 
 /* Each Card */
