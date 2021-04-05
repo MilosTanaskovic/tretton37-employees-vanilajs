@@ -1,4 +1,3 @@
-const search = document.getElementById('search');
 const result = document.getElementById('result');
 
 //4 Show name and office in DOM
