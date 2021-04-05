@@ -9,3 +9,7 @@ body {
  margin: 0;
  transition: background 0.2s linear;
 }
+
+body.dark {
+	background: #0F213B;
+}

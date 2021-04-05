@@ -1,5 +1,7 @@
 const wrapper = document.querySelector('.wrapper');
-//Grid-List view toggle
+const chk = document.getElementById('chk');
+
+// Grid-List view toggle
 
 document.addEventListener("click", e => {
   if (!e.target.matches(".view-toggle_list")) return;
@@ -15,4 +17,11 @@ document.addEventListener("click", e => {
   // List view
   e.preventDefault();
   wrapper.classList.remove("list");
+});
+
+// Theme Toggler
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+  window.scrollTo(0,0);
 });
