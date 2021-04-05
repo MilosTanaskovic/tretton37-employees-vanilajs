@@ -22,5 +22,5 @@ const getEmployees = async (term) => {
 
  cache.employees = data;
  cache.currentEmployees = data;
- 
+ showEmployees();
 }
