@@ -11,3 +11,7 @@ form input {
  padding: 15px 30px;
  width: 100%;
 }
+
+input:focus {
+ outline: none;
+}

@@ -6,7 +6,7 @@ const cache = {
   currentEmployees: [],
 }
 // Fetch employees from API
-const getEmployees = async (term) => {
+const getEmployees = async () => {
  const res = await fetch(`${apiURL}/${endpoint}`, {
   method: 'get',
   headers: {

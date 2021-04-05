@@ -11,14 +11,12 @@ const showEmployees = () => {
      <li>
       <div class="card middle"> 
        <div class="front">
-        <img src="../../assets/img/tretton37-1.png" alt="tretton37">
-        ${!employee.imagePortraitUrl ? '' : `<img src="${employee.imagePortraitUrl}" alt="${employee.name}">`}
+        ${!employee.imagePortraitUrl ? ' <img src="../../asset/img/tretton37-1.png" alt="tretton37">' : `<img src="${employee.imagePortraitUrl}" alt="${employee.name}">`}
        </div>
        
        <div class="back">
         <div class="back-content middle">
-          <img src="../../assets/img/tretton37-2.png" alt="tretton37">
-          ${!employee.imageWallOfLeetUrl ? '' : `<img src="${employee.imageWallOfLeetUrl}" alt="${employee.name}">`}
+          ${!employee.imageWallOfLeetUrl ? '<img src="../../asset/img/tretton37-2.png" alt="tretton37">' : `<img src="${employee.imageWallOfLeetUrl}" alt="${employee.name}">`}
         </div>
        </div>
       </div>
