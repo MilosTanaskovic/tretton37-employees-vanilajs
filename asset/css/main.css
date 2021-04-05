@@ -39,7 +39,6 @@ ul.wrapper.list {
 
 ul.wrapper > li {
  margin: 10px 0;
- padding: 20px;
  border-radius: 30px;
  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2),
              0px 0px 50px rgba(0, 0, 0, 0.2);
@@ -53,7 +52,7 @@ ul.wrapper > li:hover {
 
 .card {
  width: 300px;
- height: 465px;
+ height: 455px;
 }
 
 ul.wrapper li img {
@@ -63,7 +62,8 @@ ul.wrapper li img {
 .social-info {
  display: flex;
  justify-content: space-between;
- padding: 10px 0;
+ margin-top: 20px;
+ padding: 40px 10px 20px 20px;
 }
 
 .social-info > span {
@@ -187,4 +187,11 @@ footer {
   display: flex;
   justify-content: flex-end;
   padding: 16px
+}
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+ .view-toggle {
+  display: none;
+ }
 }
