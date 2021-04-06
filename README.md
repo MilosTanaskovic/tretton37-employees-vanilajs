@@ -14,20 +14,20 @@
 
 - Vanila JavaScript
 
-- HTML5 [HTML5](https://devdocs.io/html/)
+- [HTML5](https://devdocs.io/html/)
 
-- CSS3 [CSS3](https://devdocs.io/css/)
+- [CSS3](https://devdocs.io/css/)
   - Animations & Transitions
   - Flexible Box Layout
   - Grid Layout
   - Media Queries
   - Images
   
-- Font [Font](https://fontawesome.com/)
+- [Font](https://fontawesome.com/)
   
-- DOM [DOM](https://devdocs.io/dom/)
+- [DOM](https://devdocs.io/dom/)
   
 - API, HTTP
   
-- POSTMAN [POSTMAN] - (https://www.postman.com/) 
+- [POSTMAN](https://www.postman.com/) 
 
