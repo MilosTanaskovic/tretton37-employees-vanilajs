@@ -1,4 +1,4 @@
-const result = document.getElementById('result');
+import { result, cache } from './constants.js';
 
 //4 Show name and office in DOM
 const showEmployees = () => {
@@ -48,6 +48,8 @@ const showEmployees = () => {
    )).join('')}
  `;
 }
+
+export { showEmployees };
 
 
 

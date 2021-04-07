@@ -1,8 +1,8 @@
-const wrapper = document.querySelector('.wrapper');
-const chk = document.getElementById('chk');
-const target = document.querySelector('footer');
-const scrollToTopBtn = document.querySelector(".scrollToTopBtn")
-const rootElement = document.documentElement
+import { filterEmployees } from './utils.js';
+import { wrapper, chk, target, scrollToTopBtn, rootElement, loading, cache, config } from './constants.js';
+import { showEmployees } from './index.js';
+
+
 
 // Grid-List view toggle
 
@@ -57,3 +57,33 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 let observer = new IntersectionObserver(callback);
 // Finally start observing the target element
 observer.observe(target);
+
+// Infinite Scrolling
+
+window.addEventListener('scroll', () => {
+  //console.log(123);
+
+  const currentBottomScrollPosition = window.pageYOffset + window.innerHeight;
+  const loadingTopPosition = loading.getBoundingClientRect().top;
+
+  if( loadingTopPosition - currentBottomScrollPosition <= 150 ) {
+  
+    // show the loading animation
+    showLoading();
+  }
+});
+
+const showLoading = () => {
+  loading.classList.add('show');
+  
+  // load more data
+  const employyes = filterEmployees(cache.employees);
+  cache.currentEmployees = employyes.slice(0, cache.currentEmployees.length + config.pagination.perPage);
+  showEmployees();
+  setTimeout(() => {
+    if(cache.currentEmployees.length >= employyes.length){
+      loading.classList.remove('show');
+    }  
+  }, 500);
+  
+}

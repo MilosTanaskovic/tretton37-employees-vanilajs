@@ -1,10 +1,6 @@
-const apiURL = 'https://api.1337co.de';
-const endpoint = 'v3/employees';
+import { apiURL, endpoint, cache, config } from '../js/constants.js';
+import { showEmployees } from '../js/index.js';
 
-const cache = {
-  employees: [],
-  currentEmployees: [],
-}
 // Fetch employees from API
 const getEmployees = async () => {
  const res = await fetch(`${apiURL}/${endpoint}`, {
@@ -21,6 +17,9 @@ const getEmployees = async () => {
  console.log(data);
 
  cache.employees = data;
- cache.currentEmployees = data;
+ cache.currentEmployees = data.slice(0, config.pagination.perPage);
+
  showEmployees();
 }
+
+export { getEmployees };
