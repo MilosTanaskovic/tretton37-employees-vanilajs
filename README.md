@@ -2,7 +2,7 @@
 
 ##### Demo:
 
-![Tretton37 Employees App](https://tretton37-employees-vanilajs.netlify.app/)
+![Tretton37 Employees App](https://tretton37-employees-vanillajs.netlify.app/)
 
 ##### Steps to run the App:
 
